@@ -19,5 +19,37 @@ for x in string.ascii_lowercase:
             alpha_m.append(x)
 
 alpha.append(alpha_m)
+#print(alpha)
 
-print(alpha)
+pl = "iplaywithx"
+
+for x in range(0,len(pl),2):
+    print("     "+pl[x])
+    for i in range(5):
+        for j in range(5):
+            if pl[x] == alpha[i][j]:
+                for p in range(5):
+                    for q in range(5):
+                        if pl[x+1] == alpha[p][q]:
+                            if i == p:
+                                _ = j+1
+                                if _ == 5:
+                                    _=0
+                                print(alpha[i][_])
+                                _ = q+1
+                                if _ == 5:
+                                    _=0
+                                print(alpha[i][_])
+                            else:
+                                print(alpha[i][j])
+                                print(alpha[p][q])
+                                
+
+
+
+
+
+
+
+
+
