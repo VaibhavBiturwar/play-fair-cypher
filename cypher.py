@@ -19,9 +19,13 @@ for x in string.ascii_lowercase:
             alpha_m.append(x)
 
 alpha.append(alpha_m)
-#print(alpha)
 
-pl = "iplaywitex"
+
+pl = input("Enter Text to ENCRYPT : ")
+pl = pl.split(" ")
+pl = "".join(pl)
+if len(pl)%2 !=0 :
+    pl = pl+"x"
 
 for x in range(0,len(pl),2):
     for i in range(5):
@@ -49,10 +53,10 @@ for x in range(0,len(pl),2):
                                 if _ == 5:
                                     _=0
                                 print(alpha[_][j] , end = "")
+                            
                             else:
-                                print(alpha[i][j] , end = "")
-                                print(alpha[p][q] , end = "")
-                        
+                                print(alpha[i][q] , end = "")
+                                print(alpha[p][j] , end = "")
                                 
 
 
