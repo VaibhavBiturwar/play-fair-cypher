@@ -26,6 +26,8 @@ pl = pl.split(" ")
 pl = "".join(pl)
 if len(pl)%2 !=0 :
     pl = pl+"x"
+pl = pl.replace("j","i")
+#print(pl)
 
 for x in range(0,len(pl),2):
     for i in range(5):
