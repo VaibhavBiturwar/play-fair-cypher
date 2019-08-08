@@ -39,10 +39,22 @@ for x in range(0,len(pl),2):
                                 if _ == 5:
                                     _=0
                                 print(alpha[i][_] , end = "")
+                           
+                            elif j == q:
+                                _ = i+1
+                                if _ == 5:
+                                    _=0
+                                print(alpha[_][j] , end = "")
+                                _ = p+1
+                                if _ == 5:
+                                    _=0
+                                print(alpha[_][j] , end = "")
                             else:
                                 print(alpha[i][j] , end = "")
                                 print(alpha[p][q] , end = "")
+                        
                                 
+
 
 
 
