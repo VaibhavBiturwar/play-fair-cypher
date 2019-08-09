@@ -32,13 +32,12 @@ for x in string.ascii_lowercase:
 alpha.append(alpha_m)
 
 pl = input("Enter Text to ENCRYPT : ")
-pl = pl.split(" ")
+pl = pl.lower().split(" ")
 pl = "".join(pl)
 if len(pl)%2 !=0 :
     pl = pl+"x"
 pl = pl.replace("j","i")
-print(pl)
-print(len(pl))
+
 
 
 for x in range(0 , len(pl),2):

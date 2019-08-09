@@ -22,7 +22,7 @@ alpha.append(alpha_m)
 
 
 pl = input("Enter Text to ENCRYPT : ")
-pl = pl.split(" ")
+pl = pl.lower().split(" ")
 pl = "".join(pl)
 if len(pl)%2 !=0 :
     pl = pl+"x"
@@ -59,6 +59,8 @@ for x in range(0,len(pl),2):
                             else:
                                 print(alpha[i][q] , end = "")
                                 print(alpha[p][j] , end = "")
+                            break                    
+                    
                                 
 
 
